@@ -93,6 +93,18 @@ public class Main {
         wolkswagen.pitStop();
         wolkswagen.bestLapTime();
         wolkswagen.maxSpeed();
+        System.out.println();
+
+        categoryB<Driver> categoryB = new categoryB<>("Дроздов Виктор Сергеевич", "BMW", "Z8");
+        categoryB.categoryB(bmw);
+        System.out.println();
+
+        categoryC<Driver> categoryC = new categoryC<>("Майкл Макени", "Nissan","UD1452C");
+        categoryC.categoryC(nissan);
+        System.out.println();
+
+        categoryD<Driver> categoryD = new categoryD<>("Джордж Вильям", "Wolkswagen", "DSA50");
+        categoryD.categoryD(wolkswagen);
 
 
     }
