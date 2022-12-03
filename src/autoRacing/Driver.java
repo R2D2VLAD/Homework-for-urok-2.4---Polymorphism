@@ -5,13 +5,20 @@ public abstract class Driver {
     private boolean drivingLicense; // Наличие водительских прав
     private int experience; // Стаж
 
-    public Driver(String FIO, double drivingLicense, int experience) {
+    public Driver(String FIO, boolean drivingLicense, int experience) {
         if (FIO != null && !FIO.isEmpty() && !FIO.isBlank()) {
             this.FIO = FIO;
         }
-        this.drivingLicense = true;
+        this.drivingLicense = drivingLicense;
         this.experience = experience;
     }
+
+    public Driver(String FIO) {
+        if (FIO != null && !FIO.isEmpty() && !FIO.isBlank()) {
+            this.FIO = FIO;
+        }
+    }
+
 
     public abstract void startMoving();
 
@@ -33,7 +40,7 @@ public abstract class Driver {
         return drivingLicense;
     }
 
-    public void setDrivingLicense(boolean drivingLicense) {
+    public void setDrivingLicense() {
         this.drivingLicense = drivingLicense;
     }
 

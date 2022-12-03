@@ -95,17 +95,14 @@ public class Main {
         wolkswagen.maxSpeed();
         System.out.println();
 
-        categoryB<Driver> categoryB = new categoryB<>("Дроздов Виктор Сергеевич", "BMW", "Z8");
-        categoryB.categoryB(bmw);
-        System.out.println();
 
-        categoryC<Driver> categoryC = new categoryC<>("Майкл Макени", "Nissan","UD1452C");
-        categoryC.categoryC(nissan);
-        System.out.println();
+        categoryB <passengerCars> auto1 = new categoryB<>("Павел Дуров");
+        auto1.categoryB(bmw);
 
-        categoryD<Driver> categoryD = new categoryD<>("Джордж Вильям", "Wolkswagen", "DSA50");
-        categoryD.categoryD(wolkswagen);
+        categoryC <Trucks> auto2 = new categoryC<>("Джордж Вашингтон");
+        auto2.categoryC(nissan);
 
-
+        categoryD <Bus> auto3 = new categoryD<>("Моргенштерн");
+        auto3.categoryD(wolkswagen);
     }
 }
